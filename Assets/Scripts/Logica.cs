@@ -6,20 +6,14 @@ using UnityEngine.SceneManagement;
 public class Logica : MonoBehaviour
 {
 
-    public AudioSource erroGameOver;
+    public AudioSource som;
 
-    void Start(){
-        if(SceneManager.GetActiveScene().name == "GameOver"){
-            erroGameOver.Play();
-        }
+    public void playGame(){
+        SceneManager.LoadScene("Jogo");
     }
 
     public void gameOver(){
         SceneManager.LoadScene("GameOver");
-    }
-
-    public void restartGame(){
-        SceneManager.LoadScene("Jogo");
     }
 
     public void voltarTelaTitulo(){

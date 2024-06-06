@@ -218,8 +218,8 @@ RectTransform:
   m_Children:
   - {fileID: 1605544280}
   - {fileID: 562241377}
-  - {fileID: 583844690}
   - {fileID: 1139085120}
+  - {fileID: 583844690}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -592,7 +592,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1177014080}
         m_TargetAssemblyTypeName: Logica, Assembly-CSharp
-        m_MethodName: restartGame
+        m_MethodName: playGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -781,7 +781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 44e684fa8fd4a9f4b80da3f186348fee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  erroGameOver: {fileID: 1177014079}
+  som: {fileID: 1177014079}
 --- !u!1 &1237529743
 GameObject:
   m_ObjectHideFlags: 0
