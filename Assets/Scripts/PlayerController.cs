@@ -8,6 +8,7 @@ public class PlayerMovimento : MonoBehaviour
     Rigidbody2D rigidbody2d;
     float vertical;
     float horizontal;
+    public Logica logica;
 
     // Start is called before the first frame update
     void Start()
@@ -15,6 +16,7 @@ public class PlayerMovimento : MonoBehaviour
         // QualitySettings.vSyncCount = 0;
         // Application.targetFrameRate = 60;
         rigidbody2d = GetComponent<Rigidbody2D>();
+        logica = GameObject.FindGameObjectWithTag("Logica").GetComponent<Logica>();
     }
 
     // Update is called once per frame
@@ -47,5 +49,11 @@ public class PlayerMovimento : MonoBehaviour
         position.x = position.x + 3.7f * horizontal * Time.deltaTime;
 
         rigidbody2d.MovePosition(position);
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision){
+        if(collision.gameObject.tag == "Virus"){
+            logica.gameOver();
+        }
     }
 }
