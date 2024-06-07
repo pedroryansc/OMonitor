@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Virus
   - Logica
+  - AreaFlash
   layers:
   - Default
   - TransparentFX

@@ -18,4 +18,10 @@ public class VirusMovimento : MonoBehaviour
     {
         transform.position = Vector2.MoveTowards(transform.position, alvo.position, velocidade * Time.deltaTime);
     }
+
+    private void OnTriggerStay2D(Collider2D collision){
+        if(Input.GetKey(KeyCode.Space) && collision.gameObject.tag == "AreaFlash"){
+            Destroy(gameObject);
+        }
+    }
 }

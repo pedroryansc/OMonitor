@@ -40,6 +40,10 @@ public class PlayerMovimento : MonoBehaviour
         }
 
         // Debug.Log(horizontal);
+
+        if(Input.GetKey(KeyCode.Space)){
+            logica.som.Play();
+        }
     }
 
     void FixedUpdate(){
