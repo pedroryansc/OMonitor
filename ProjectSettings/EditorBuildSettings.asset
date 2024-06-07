@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: d7336616685355d4589c04358df50d7a
+  - enabled: 1
+    path: Assets/Scenes/FimLabirinto.unity
+    guid: ac34838046ca6224cb6f9e2373fd0b09
   m_configObjects: {}

@@ -7,6 +7,8 @@ TagManager:
   - Virus
   - Logica
   - AreaFlash
+  - AreaLimite
+  - Fim do Labirinto
   layers:
   - Default
   - TransparentFX

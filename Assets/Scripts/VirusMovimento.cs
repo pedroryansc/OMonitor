@@ -24,4 +24,10 @@ public class VirusMovimento : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnTriggerExit2D(Collider2D collision){
+        if(collision.gameObject.tag == "AreaLimite"){
+            Destroy(gameObject);
+        }
+    }
 }

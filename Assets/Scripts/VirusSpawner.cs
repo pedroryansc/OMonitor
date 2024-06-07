@@ -6,13 +6,13 @@ public class VirusSpawner : MonoBehaviour
 {
 
     public GameObject virus;
-    public float intervalo = 5;
+    public float intervalo = 10;
     private float tempo = 0;
 
     // Start is called before the first frame update
     void Start()
     {
-        spawnarVirus();
+        
     }
 
     // Update is called once per frame

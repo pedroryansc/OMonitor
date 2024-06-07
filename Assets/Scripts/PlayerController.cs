@@ -60,6 +60,8 @@ public class PlayerMovimento : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision){
         if(collision.gameObject.tag == "Virus"){
             logica.gameOver();
+        } else if(collision.gameObject.tag == "Fim do Labirinto"){
+            logica.fim();
         }
     }
 }
