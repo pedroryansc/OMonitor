@@ -43,6 +43,8 @@ public class PlayerMovimento : MonoBehaviour
 
         if(Input.GetKey(KeyCode.Space)){
             logica.som.Play();
+            StartCoroutine(logica.flashMonitor());
+            logica.img.color = new Color(0, 0, 0, 0);
         }
     }
 
